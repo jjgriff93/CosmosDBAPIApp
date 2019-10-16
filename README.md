@@ -1,20 +1,10 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+A simple Cosmos DB API app built in ASP.NET Core for acting as a middle layer between web/mobile applications and a Cosmos DB backend.
 
 # Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+1. Create your Cosmos DB instance along with a database, collection and document: https://docs.microsoft.com/en-us/azure/cosmos-db/create-cosmosdb-resources-portal
+2. Pull and open the API app code in VS Code
+3. Update the Cosmos DB config in the appsettings.json file with your Cosmos DB instance secret, database name and URI
+4. Hit Debug and use Postman to query your API (which should be running at `localhost:5001`), updating the suffix with the associated action you want to perform, for example `/database/GetDocument/<COLLECTION NAME>/<DOCUMENT ID>/<PARTITION KEY>`. You can find all of the actions you can perform in the comments in the `DatabaseController.cs` file.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
-
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Feel free to add more and contribute to make this repo better :)
